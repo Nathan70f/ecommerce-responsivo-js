@@ -1,0 +1,200 @@
+.buy-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.247);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    /* overflow: hidden; */
+    align-items: center;
+    width: 800px;
+    max-width: 90%;
+    height: min-content;
+    padding: 20px;
+    gap: 15px;
+}
+
+main {
+    height: 100vh;
+}
+
+/* DEIXAR OS CONTEUDOS DO CONTAINER LADO AO LADO */
+.cart-list {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    /* position: relative; */
+    /* overflow: hidden; */
+    padding: 0;
+    margin-bottom: 0;
+    /* height: 100%; */
+}
+
+/* AJUSTAR ITEM PARA SE ADEQUAR A IMAGEM E INFORMACOES DO PRODUTO */
+.cart-item {
+    display: flex;
+    background: rgba(210, 224, 238, 0.486);
+    margin: 5px 0;
+    padding: 10px;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+/* CONFIGURAR VALOR PARA SE AJUSTAR NO LI */
+.cart-item span {
+    display: flex;
+    padding: 5px;
+    font-size: larger;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-list input {
+    /* configurar responsividade */
+    width: 30%;
+    background: none;
+    font-weight: bolder;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    margin: 7px 0 0;
+}
+
+#cart-message {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+.info-buy {
+    display: flex;
+    padding: 0;
+    align-items: center;
+}
+
+.quantity-control {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* font-size: 30px; */
+    /* margin: 0; */
+}
+
+/* ajustar tamanho dos botoes */
+.quantity-control button {
+    background: none;
+    color: #0664b5;
+    padding: 5px;
+    size: 15px;
+    height: 40px;
+    width: 30px;
+    margin: 0;
+}
+
+/* ajustar container */
+.cart-resume {
+    text-align: center;
+}
+
+.btn-remove {
+    background: none;
+    color: rgb(247, 137, 94);
+    margin: 0;
+    height: 80%;
+}
+
+.btn-remove:hover {
+    background: rgb(247, 137, 94);
+    color: white;
+}
+
+.details-buy {
+    display: grid;
+    /* position: relative; */
+    margin: 0;
+    width: 50%;
+    padding: 30px;
+    height: min-content;
+    /* justify-items: center; */
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 10px;
+    /* margin-top: 20px 0; */
+    /* margin-bottom: 0; */
+    /* width: 50%; */
+    /* height: 100%; */
+    /* box-sizing: border-box; */
+    gap: 5px;
+    /* flex: 3; */
+    /* overflow: hidden; */
+    flex: 1 1 calc(33% - 40px);
+}
+
+/* DEIXAR OS PRODUTOS RECOMENDADOS EM LINHA EM MODO DE ROLAGEM */
+.recomends {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    padding: 0;
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+    /* overflow-y: hidden; */
+    /* overflow-x: hidden; */
+    gap: 10px;
+    /* max-height: 200px; */
+
+}
+
+.product-recomended {
+   display: flex;
+   overflow-x: scroll;
+   height: 100%;
+   flex-direction: row;
+   width: 100%;
+}
+
+.product-recomended .card {
+    display: flex;
+    flex-direction: column;
+    background: var(--cards-e-texto);
+    /* border: 1px solid var(--cor-bordas-card); */
+    border-radius: 5px;
+    /* box-shadow: var(--cor-texto-principal); */
+    margin: 30px 15px;
+    padding: 10px;
+    text-align: center;
+    min-width: 200px;
+    font-size: smaller;
+    max-height: 350px;
+    flex: 1 1 calc(33% - 40px);
+    /* overflow: hidden; */
+}
+
+
+/* fazer com o footer fique no final da página independente do conteúdo */
+footer {
+    position: relative;
+    top: 100%;
+    /* bottom: 0; */
+    height: auto;
+
+}

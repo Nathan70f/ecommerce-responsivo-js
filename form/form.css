@@ -1,0 +1,129 @@
+:root {
+    --cor-principal: linear-gradient(180deg, #49f8a6, #42c2b6);
+    --cor-texto-principal: #000000;
+    --cor-texto-secundaria: #ffffff;
+    --cor-bordas-card: linear-gradient(180deg, #69a8d1, #42c2b6);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+}
+
+.formulario {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    /* overflow: hidden; */
+    width: 800px;
+    max-width: 90%;
+    height: 400px;
+    padding: 0;
+    backdrop-filter: blur(3px);
+}
+
+/* FAZER O FORMULARIO FICAR COM O BACKGROUND COM VISUAL EMBAÇADO*/
+
+
+.form-signin, .form-signup {
+    display: flex;
+    justify-items: center;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    position: relative;
+    /* overflow: hidden; */
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.form-login, .form-register {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    align-items: center;
+    padding: 5px;
+    /* margin-top: 20px; */
+    /* margin-bottom: 0; */
+    width: 50%;
+    /* height: auto; */
+    /* box-sizing: border-box; */
+    /* gap: 5px; */
+}
+
+/* ALTERAR APARENCIA DOS INPUTS */
+.form-login input, .form-register input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.form-login button, .form-register button {
+    width: 50%;
+    padding: 5px;
+    margin: 0;
+    border: none;
+    border-radius: 10px;
+    background: var(--cor-bordas-card);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+.form-login button:hover, .form-register button:hover {
+    background: var(--cor-principal);
+}
+
+#mesage-welcome, #message-welcome {
+    background: var(--cor-bordas-card);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* padding: 40px; */
+    width: 50%;
+    /* height: auto; */
+    /* box-sizing: border-box; */
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.form-footer {
+    border-top: 1px solid #eee;
+    text-align: center;
+    /* position: relative; */
+    /* padding: 20px; */
+    font-size: 14px;
+    color: #635f5f;
+    /* margin-right: 10px; */
+    /* width: 100%; */
+    /* margin-bottom: 0; */
+    margin-top: 1rem;
+    /* padding: 0; */
+    /* height: fit-content; */
+
+}
+
+a {
+    color: #07325e;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* AJUSTAR RESPONSIVIDADE A MENOS DE 490PX */
