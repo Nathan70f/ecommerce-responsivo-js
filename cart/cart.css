@@ -18,7 +18,7 @@
 }
 
 main {
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 /* DEIXAR OS CONTEUDOS DO CONTAINER LADO AO LADO */
@@ -193,7 +193,7 @@ form {
 /* fazer com o footer fique no final da página independente do conteúdo */
 footer {
     position: relative;
-    top: 100%;
+    /* top: 100%; */
     /* bottom: 0; */
     height: auto;
 
