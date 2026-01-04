@@ -5,7 +5,8 @@
     --cor-bordas-card: linear-gradient(180deg, #69a8d1, #42c2b6);
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -26,28 +27,38 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     /* overflow: hidden; */
-    width: 800px;
-    max-width: 90%;
+    width: 80%;
+    max-width: 900px;
     height: 400px;
     padding: 0;
     backdrop-filter: blur(3px);
+    position: relative;
+    overflow: hidden;
 }
 
 /* FAZER O FORMULARIO FICAR COM O BACKGROUND COM VISUAL EMBAÇADO*/
 
 
-.form-signin, .form-signup {
+.form-signin,
+.form-signup {
     display: flex;
     justify-items: center;
     /* flex-wrap: wrap; */
     width: 100%;
-    position: relative;
+    position: absolute;
     /* overflow: hidden; */
     padding: 0;
     margin-bottom: 0;
+    inset: 0;
+    justify-content: center;
+    /* align-items: center; */
+    transition:
+        transform 0.6s ease,
+        opacity 0.4s ease;
+
 }
 
-.form-signup {
+/* .form-signup {
     display: none;
 }
 
@@ -57,9 +68,34 @@ body {
 
 .formulario.form-toggle .form-signup {
     display: flex;
+} */
+
+/* AJUSTES DE ANIMACAO */
+/* ESTADO INICIAL */
+.form-signin {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: all;
+}
+.form-signup {
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+}
+/* ESTADO ALTERNADO (classe no pai) */
+.formulario.form-toggle .form-signin {
+  transform: translateX(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+.formulario.form-toggle .form-signup {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: all;
 }
 
-.form-login, .form-register {
+.form-login,
+.form-register {
     display: flex;
     flex-direction: column;
     /* justify-content: start; */
@@ -74,7 +110,8 @@ body {
 }
 
 /* ALTERAR APARENCIA DOS INPUTS */
-.form-login input, .form-register input {
+.form-login input,
+.form-register input {
     width: 80%;
     padding: 10px;
     margin: 10px 0;
@@ -82,7 +119,9 @@ body {
     border-radius: 10px;
     font-size: 16px;
 }
-.form-login button, .form-register button {
+
+.form-login button,
+.form-register button {
     width: 50%;
     padding: 5px;
     margin: 0;
@@ -94,11 +133,14 @@ body {
     cursor: pointer;
     transition: background 0.5s;
 }
-.form-login button:hover, .form-register button:hover {
+
+.form-login button:hover,
+.form-register button:hover {
     background: var(--cor-principal);
 }
 
-#mesage-welcome, #message-welcome {
+#mesage-welcome,
+#message-welcome {
     background: var(--cor-bordas-card);
     color: white;
     display: flex;
@@ -134,6 +176,7 @@ a {
     color: #07325e;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
