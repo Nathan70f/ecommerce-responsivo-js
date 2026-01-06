@@ -457,7 +457,7 @@ console.log("listRecomend encontrado?", listRecomend); // DEBUG
 
 // FILTRAR PRODUTOS
 function renderProducts(products) {
-  // productsContainer.innerHTML = '';
+  productsContainer.innerHTML = '';
   products.forEach(product => {
     const productCard = document.createElement('div');
     productCard.classList.add('card');
@@ -481,6 +481,7 @@ function renderProducts(products) {
 }
 
 function filterProducts(highlight, category) {
+
   const productsFiltered = products.filter(product => {
     return (highlight ? product.highlight : true) && (category ? product.category === category : true);
   });
